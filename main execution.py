@@ -9,9 +9,9 @@ import winsound
 freq = 1000
 dur = 300
 faceCascade = cv2.CascadeClassifier(
-    r'C:\Users\Srushti\Desktop\PROJECTS\MD MINI PROJECT\haarcascade_frontalface_default.xml')
+    r'C:\haarcascade_frontalface_default.xml')
 
-model = load_model(r'C:\Users\Srushti\Desktop\PROJECTS\MD MINI PROJECT\mask_recog_ver2.h5')
+model = load_model(r'C:\mask_recog_ver2.h5')
 
 video_capture = cv2.VideoCapture(0)
 
