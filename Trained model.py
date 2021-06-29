@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-imagePaths = list(paths.list_images(r'C:\Users\Srushti\Desktop\PROJECTS\MD MINI PROJECT\dataset'))
+imagePaths = list(paths.list_images(r'C:\PROJECTS\MD MINI PROJECT\dataset'))
 data = []
 labels = []
 # loop over the image paths
