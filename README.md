@@ -5,6 +5,8 @@ The project was based on classifying people as masked and unmasked using Open-CV
 GUIDE:
 
 1.Download the dataset folder.
+
 2.Train the model.
+
 3.Run the main file.
 
