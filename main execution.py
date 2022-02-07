@@ -9,9 +9,9 @@ import winsound
 freq = 1000
 dur = 300
 faceCascade = cv2.CascadeClassifier(
-    r'C:\haarcascade_frontalface_default.xml')
+    r'C:\Users\DELL\Documents\GitHub\Face-Mask-Detection-Project\haarcascade_frontalface_default.xml')
 
-model = load_model(r'C:\mask_recog_ver2.h5')
+model = load_model(r'C:\Users\DELL\Documents\GitHub\Face-Mask-Detection-Project\mask_recog_ver2.h5')
 
 video_capture = cv2.VideoCapture(0)
 
@@ -57,7 +57,7 @@ while True:
     k = cv2.waitKey(30) & 0xff
     if k == 27:
         break
-        video_capture.release()
+video_capture.release()
 cv2.destroyAllWindows()
 
 

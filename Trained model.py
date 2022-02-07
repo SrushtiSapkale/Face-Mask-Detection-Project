@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-imagePaths = list(paths.list_images(r'C:\PROJECTS\MD MINI PROJECT\dataset'))
+imagePaths = list(paths.list_images(r'C:\Users\DELL\Documents\GitHub\Face-Mask-Detection-Project\dataset'))
 data = []
 labels = []
 # loop over the image paths
@@ -99,6 +99,7 @@ H = model.fit(
     validation_steps=len(testX) // BS,
     epochs=EPOCHS)
 N = EPOCHS
+'''
 plt.style.use("ggplot")
 plt.figure()
 plt.plot(np.arange(0, N), H.history["loss"], label="train_loss")
@@ -109,6 +110,6 @@ plt.title("Training Loss and Accuracy")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
 plt.legend(loc="lower left")
-
+'''
 #To save the trained model
 model.save('mask_recog_ver2.h5')
